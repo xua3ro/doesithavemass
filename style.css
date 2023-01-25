@@ -50,7 +50,7 @@ h1.light{
     padding-top: 1vh;
     width: 95%;
     overflow-wrap: normal;
-    background-color:rgb(255, 252, 247, 0.8);
+    background-color:rgba(255, 249, 236, 1);
     border-radius: 1rem;
 }
 .subtitle{
