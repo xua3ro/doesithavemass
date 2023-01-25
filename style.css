@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+
+body{
+    background-color: rgba(255, 249, 236, 1);
+    color: blue;
+    font-family: 'Scheherazade New', monospace;
+    font-size: x-large;
+    padding-bottom: 5rem;
+    cursor: url("heCur.svg"), auto;
+    /* cursor: crosshair; */
+}
+
+a{
+    cursor: alias;
+}
+
+h1{
+    font-family: 'Scheherazade New', monospace;
+}
+
+h1.light{
+    font-family: 'Andale Mono', monospace;
+    font-size: 1.3rem;
+    overflow-wrap: normal;
+}
+
+.image{
+    background-image: url("aishaUltrasound.jpg");
+    background-color: rgba(255, 249, 236, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    padding-top: 2vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+}
+
+.main{
+    color: black !important;
+    font-family: Andale Mono, monospace !important;
+    font-size: 1rem;
+    margin: 30px;
+    padding-top: 1vh;
+    width: 95%;
+    overflow-wrap: normal;
+    background-color:rgb(255, 252, 247, 0.8);
+    border-radius: 1rem;
+}
+.subtitle{
+    color: black !important;
+    font-family: Andale Mono, monospace !important;
+    font-size: 12px !important;
+}
+
+
+div.sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+}
+
+
+.row{
+    width: 100%;
+    padding-top: 1%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+  }
+
+  .morePadding {
+    padding: 0%;
+  }
+  
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 830px) {
+
+    .image{
+        background-image: url("aishaUltrasound.png");
+        background-color: rgba(255, 249, 236, 1);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .morePadding {
+        padding: 5%;
+      }
+
+    .row{
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .column {
+        float: none;
+        width: 50%;
+        height: 100%;
+        margin-top: 2%;
+      }
+
+      .main{
+        color: #000000 !important;
+        font-family: Andale Mono, monospace !important;
+        font-size: 1rem;
+        width: 100%;
+        height: 100%;
+        overflow-wrap: normal;
+        background-color:rgba(255, 249, 236, 0.9);
+        border-color: blue;
+        border-width: 1px;
+        border-style: inset;
+        border-radius: 3px !important;
+        margin: 0;
+        display: flexbox;
+    }
+
+    a{
+        color: rgb(0, 0, 255);
+    }
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  .aframebox {
+    height: 30vw;
+    width: 30vw;
+    margin-left: 60vw;
+    margin-top: 3vh;
+    border-radius: 18rem;
+    overflow: hidden;
+    margin-bottom: 4%;
+    }
+
+

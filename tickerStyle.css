@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+body{
+    font-family: 'Lalezar', cursive;
+  }
+  
+  p {
+  white-space: nowrap;
+  font-weight: 700;
+  text-transform: uppercase;  
+  font-size: 2rem;
+    
+  }
+  
+  .scroll-left {
+  height: 50px; 
+  overflow: hidden;
+  position: relative;
+  border: solid 1px;
+  }
+  
+  .scroll-right {
+  transform: rotate(180deg);
+  height: 50px; 
+  overflow: hidden;
+  position: relative;
+  border: solid 1px;
+  }
+  
+  .scroll-down {
+   
+  min-height: 20px;
+  min-width: 50px;
+  overflow: hidden;
+  position: relative;
+  border: solid 1px;
+  }
+  
+  .scroll-up {
+  
+  transform: rotate(180deg);
+  min-height: 200px;
+  min-width: 50px;
+  overflow: hidden;
+  position: relative;
+  border: solid 1px;
+  }
+  
+  
+  
+  .scroll-left p {
+    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%); 
+  transform:translateX(100%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-left 50s linear infinite;
+  -webkit-animation: scroll-left 50s linear infinite;
+  animation: scroll-left 50s linear infinite;
+  }
+  
+  .scroll-right p {
+    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(0%);
+  -webkit-transform:translateX(0%); 
+  transform:translateX(0%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-right 50s linear infinite;
+  -webkit-animation: scroll-right 50s linear infinite;
+  animation: scroll-right 50s linear infinite;
+  }
+  
+  .scroll-down p {
+  writing-mode: vertical-rl;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateY(1000%);
+  -webkit-transform:translateY(1000%); 
+  transform:translateY(1000%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-down 8s linear infinite;
+  -webkit-animation: scroll-down 8s linear infinite;
+  animation: scroll-down 8s linear infinite;
+  }
+  
+  .scroll-up p {
+  writing-mode: vertical-rl;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateY(0%);
+  -webkit-transform:translateY(0%); 
+  transform:translateY(0%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-up 8s linear infinite;
+  -webkit-animation: scroll-up 8s linear infinite;
+  animation: scroll-up 8s linear infinite;
+  }
+  
+  
+  /* Move it (define the animation) */
+  @-moz-keyframes scroll-left {
+  0% { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll-left {
+  0% { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll-left {
+  0% { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+  }
+  }
+  
+  @-moz-keyframes scroll-right {
+  0% { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll-right {
+  0% { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll-right {
+  0% { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+  }
+  }
+  
+  @-moz-keyframes scroll-down {
+  0% { -moz-transform: translateY(100%); }
+  100% { -moz-transform: translateY(-100%); }
+  }
+  @-webkit-keyframes scroll-down {
+  0% { -webkit-transform: translateY(100%); }
+  100% { -webkit-transform: translateY(-100%); }
+  }
+  @keyframes scroll-down {
+  0% { 
+  -moz-transform: translateY(100%); /* Browser bug fix */
+  -webkit-transform: translateY(100%); /* Browser bug fix */
+  transform: translateY(100%); 
+  }
+  100% { 
+  -moz-transform: translateY(-100%); /* Browser bug fix */
+  -webkit-transform: translateY(-100%); /* Browser bug fix */
+  transform: translateY(-100%); 
+  }
+  }
+  
+  @-moz-keyframes scroll-up {
+  0% { -moz-transform: translateY(100%); }
+  100% { -moz-transform: translateY(-100%); }
+  }
+  @-webkit-keyframes scroll-up {
+  0% { -webkit-transform: translateY(100%); }
+  100% { -webkit-transform: translateY(-100%); }
+  }
+  @keyframes scroll-up {
+  0% { 
+  -moz-transform: translateY(100%); /* Browser bug fix */
+  -webkit-transform: translateY(100%); /* Browser bug fix */
+  transform: translateY(100%); 
+  }
+  100% { 
+  -moz-transform: translateY(-100%); /* Browser bug fix */
+  -webkit-transform: translateY(-100%); /* Browser bug fix */
+  transform: translateY(-100%); 
+  }
+  }
+  
+  #content {
+      display: grid;
+      max-width: 960px;
+      grid-gap: 5px;
+      grid-template-columns: repeat(12,1fr);
+      grid-auto-rows: repeat(12,1fr);
+      position: relative;
+  
+  }
+  
+  .sl1 {
+  grid-column: 1 / -1 ;
+  }
+  
+  .sr1 {
+    grid-column: 1 / -1 ;
+      grid-row: 1 / -1 ;  
+  }
+  
+  .sd1{
+        grid-column: 1 / 2;
+      grid-row: 2 / 4;
+  }
+  .su1{
+        grid-column: 12 / 13;
+      grid-row: 2 / 4;
+  }

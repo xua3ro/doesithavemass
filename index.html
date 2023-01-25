@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Madeeha's Website</title>
-    </head>
-    <body>
-        <h1>Welcome to my website</h1>
-        <h2>My Name is Madeeha</h2>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>🔮</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tickerStyle.css">
+    <meta name="description" content="transparent video test">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- Aframe Extras Component -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <!-- Aframe Environment Component -->
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    <!-- Bootstrap Bootswatch theme CSS - other themes available here: https://bootswatch.com -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/thomaspark/bootswatch/gh-pages/slate/bootstrap.min.css" />
+  
+  <!-- Bootstrap JS Dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <!-- showcase image here -->
+  <div class="image">
+
+    <!-- transparent name title here -->
+   <div class="header">
+      <video width="100%" preload="auto" muted autoplay loop>
+        <source src="/madeeha.webm" type="video/webm">
+      </video>
+    </div>
+
+  <!-- animation window and scrolling bio -->
+    <div id="content">
+      <p><video width="1000%" preload="auto" muted autoplay loop>
+        <source src="/bubblepop.webm" type="video/webm">
+      </video></p>
+      <div class="scroll-left sl1">
+        <p>new media &nbsp;✦&nbsp; <span> poetry &nbsp;✦&nbsp; </span> web design &nbsp; ✦&nbsp;<span> teaching &nbsp; ✦&nbsp;</span> mama &nbsp;✦&nbsp;<span> installation  </span></p>
+      </div>
+      <div class="scroll-right sr1">
+      <p>experiments in <a href="http://oraclemodem.com/ritual_technology.pdf">ritual technology</a></span></p>
+      </div>
+      <div class="scroll-down sd1">
+        <p> hello </p> 
+      </div>
+      <div class="scroll-up su1">
+       <p>		✹</p> 
+      </div>    
+    </div>
+
+    <!-- load aframe scene -->
+  <a-scene class="aframebox" preloader embedded inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="false" device-orientation-permission-ui="" fog="color: #282828; far: 80; density: 0; near: 0.8" loading-screen="dotsColor: red; backgroundColor: black;">
+        <a-assets>
+          <!-- Add model in assets section -->
+          <a-asset-item id="drip" src="model/drip.glb"  preload="true"></a-asset-item>
+          <a-asset-item id="tray" src="model/implementtray.glb" preload="true"></a-asset-item>
+          <a-asset-item id="womb" src="model/wombHoloRedAnim.glb" preload="true"></a-asset-item>
+        </a-assets>
+        
+        <!-- Add aframe environement -->
+        <a-entity environment="preset: checkerboard; groundColor: #000000; groundYScale: 6.12; groundTexture: squares; groundColor2: #0a0b0f; gridColor: #000000; dressingAmount: 0; dressingColor: #000000" visible="">
+          <a-entity class="environment" position="0 4.33335 -0.2" light="intensity: 50; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; type: point; color: #4f0d0d" visible=""></a-entity>
+          <a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #0000c7; bottomColor: #ffe09e; blending: none" visible="" geometry=""></a-sky>
+        <a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 6.12" shadow="cast: false; receive: false"></a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #003c8a; bottomColor: #e4d0b9" visible="" geometry=""></a-sky></a-entity>
+  
+        <!-- Animated Model. -->
+        <a-entity gltf-model="model/drip.glb" position="-0.193 9 -32.202" scale=""></a-entity>
+        <a-entity gltf-model="model/implementtray.glb" position="-0.193 0.02 -32.202" scale=""></a-entity>
+        <a-entity gltf-model="model/wombHoloRedAnim.glb" position="0 1 0" scale=""></a-entity>
+  </a-scene>
+
+  <!-- some links and other info -->
+     <div class="main">
+      <div class="morePadding"
+        <h1 class="light">Currently based in [Minneapolis, Minnesota]. In 2016, I received my MFA in Media, Art, Design, and Technology
+         from the <a href="https://www.academieminerva.nl/en/programmes/master/1178/frank-mohr-institute-ma-in-fine-art-and-design-#madtech">Frank Mohr Institute (NL)</a>. I am an Adjunct lecturer at <a href="https://www.lakeforest.edu/academics/majors-and-minors/art-and-art-history/student-work">Lake Forest College</a> and the <a href="https://www.mcad.edu">Minneapolis College of Art and Design</a>.</h1>
+        <div class="row">
+        <div class="column">3D + Design</div>
+        <div class="column">New Media Installation</div>
+        <div class="column"><a href="http://oraclemodem.com/studentwork.html">Student Work</a></div>
+        <div class="column"><a href="cv_lamoreaux.pdf">CV</a></div>
+      </div>
+      </div>
+     </div>
+    </div>
+  </body>
 </html>
+
