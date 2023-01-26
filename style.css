@@ -36,10 +36,12 @@ h1.light{
 
 .header{
     /* padding-top: 2vh; */
+    width: 30%;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     z-index: 1000000;
+    padding-left: 70%;
 }
 
 .main{
@@ -84,7 +86,7 @@ div.sticky{
   
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1260px) {
 
     .image{
         /* background-color: rgba(255, 249, 236, 1); */
