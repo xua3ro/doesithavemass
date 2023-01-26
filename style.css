@@ -35,7 +35,7 @@ h1.light{
 }
 
 .header{
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -87,8 +87,7 @@ div.sticky{
 @media only screen and (max-width: 830px) {
 
     .image{
-        background-image: url("aishaUltrasound.png");
-        background-color: rgba(255, 249, 236, 1);
+        /* background-color: rgba(255, 249, 236, 1); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
