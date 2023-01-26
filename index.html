@@ -2,44 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="madeeha lamoreaux!">
     <title>🔮</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tickerStyle.css">
-    <meta name="description" content="transparent video test">
+    
+    <!-- play video auto and pause when out of frame -->
+    <script src="ambientVideo.js"></script>
+    
+    <!-- load Aframe -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    
     <!-- Aframe Extras Component -->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <!-- Aframe Environment Component -->
     <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    
     <!-- Bootstrap Bootswatch theme CSS - other themes available here: https://bootswatch.com -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/thomaspark/bootswatch/gh-pages/slate/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/thomaspark/bootswatch/gh-pages/slate/bootstrap.min.css" />
   
-  <!-- Bootstrap JS Dependencies -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- font stuff -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
-
-
   </head>
+ 
   <body>
-    <!-- showcase image here -->
+    
+    <!-- fancy background image -->
   <div class="image">
 
-    <!-- transparent name title here -->
+    <!-- animated name vid -->
    <div class="header">
-     <a href="index.html"> <video width="100%" preload="auto" muted autoplay loop>
+     <a href="index.html"> <video width="100%" preload="auto" muted autoplay loop id='ambientVideo'>
         <source src="madeehaSM.webm" type="video/webm">
-        <source src="madeeha.mp4" type='video/mp4; codecs="hvc1"'>
+        <source src="madeeha.mp4" type='video/mp4;codecs="hvc1"'>
       </video></a>
     </div>
 
   <!-- animation window and scrolling bio -->
     <div id="content">
-      <p><video width="1000%" preload="auto" muted autoplay loop>
+      <p><video width="1000%" preload="auto" muted autoplay loop id='ambientVideo'>
         <source src="bubblepop.webm" type="video/webm">
-        <source src="bubblepop.mp4" type='video/mp4; codecs="hvc1"'>
+        <source src="bubblepop.mp4" type='video/mp4;codecs="hvc1"'>
       </video></p>
       <div class="scroll-left sl1">
         <p>new media &nbsp;✦&nbsp; <span> poetry &nbsp;✦&nbsp; </span> web design &nbsp; ✦&nbsp;<span> teaching &nbsp; ✦&nbsp;</span> mama &nbsp;✦&nbsp;<span> installation  </span></p>
